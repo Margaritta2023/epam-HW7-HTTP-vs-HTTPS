@@ -1,5 +1,4 @@
 const http = require('http');
-console.log("Starting HTTP server...");
 
 try {
     const server = http.createServer((req, res) => {
@@ -23,4 +22,4 @@ try {
     });
 } catch (err) {
     console.error('Error while setting up the server:', err);
-}
+} 
