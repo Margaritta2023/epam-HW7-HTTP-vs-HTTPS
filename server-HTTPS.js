@@ -10,11 +10,9 @@ const options = {
     key: fs.readFileSync(path.join(__dirname, 'server.key')),
     cert: fs.readFileSync(path.join(__dirname, 'server.cert'))
 };
-//console.log(options.key.toString())
 
 try {
     const server = https.createServer(options, (req, res) => {
-    
 
         if (req.url === '/') {
             console.log("Handling root request.");
